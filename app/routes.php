@@ -1,5 +1,9 @@
 <?php
 
+App::bind('PostRepositoryInterface', 'EloquentPostRepository');
+App::bind('CommentRepositoryInterface', 'EloquentCommentRepository');
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -10,8 +14,11 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
-Route::get('/', function()
+//group of routes that will belong to APIv1
+Route::group(array('prefix' => 'v1'), function()
 {
-	return View::make('hello');
+    Route::resource('posts', 'PostsController');
+    Route::resource('posts.comments', 'PostsCommentsController');
+
+  	
 });

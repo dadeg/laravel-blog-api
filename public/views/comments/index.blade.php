@@ -1,0 +1,1 @@
+/home/devbox/laravelbackbone/app/views/comments/index.blade.php

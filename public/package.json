@@ -1,0 +1,10 @@
+{
+	"name": "laravel-backbone",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"underscore": "*",
+		"backbone": "*",
+		"mustache": "*"
+	}
+}

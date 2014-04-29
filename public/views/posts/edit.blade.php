@@ -1,0 +1,1 @@
+/home/devbox/laravelbackbone/app/views/posts/edit.blade.php
